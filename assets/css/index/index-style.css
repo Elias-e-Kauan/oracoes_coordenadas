@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+main > div#containerAll{
+    width: 580px;
+    height: 380px;
+    background-color: var(--bg-color-containerAll);
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    padding: 20px;
+}
+div#containerAll > h1{
+    margin-top: 5px;
+    font-size: 45px;
+    color: #EFEBE3;
+}
+div#containerAll > div#textoIntrodutorio{
+    text-align: justify;
+    columns: 2;
+    text-indent: 15.1px;
+    font-size: 17px;
+    margin-top: 25px;
+    color: #EFEBE3;
+}
+div#containerAll > button#iniciar{
+    width: 100%;
+    background-color: #031d28;
+    border: none;
+    border-radius: 5.5px;
+    padding: 4.8px;
+    margin-top: 32px;
+    transition: 0.3748s;
+}
+button#iniciar:hover{
+    box-shadow: var(--box-shadow);
+}
+div#containerAll > button#iniciar > a{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+    color: #EFEBE3;
+    display: block;
+    width: 100%;
+}
