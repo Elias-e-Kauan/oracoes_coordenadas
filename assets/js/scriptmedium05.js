@@ -20,7 +20,7 @@ function verificar() {
     if (document.getElementById("opcaoA").checked && opA == true) {
         document.getElementById('justificativa').innerHTML = 'Parabéns!!, A alternativa A está correta.'
         justificar.style.textAlign = "center"
-        pontuacao = pontuacao + 5
+        pontuacao = pontuacao + 10
     }
     else if (document.getElementById("opcaoA").checked && opA == false) {
         document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra B. Justificativa: <br>I. A conjunção "e" traz a ideia de soma. Quer dizer que além do guia explicar o efeito da crise também oferece estratégias para enfrentá-la. <br> II. A conjunção "portanto" traz a ideia de conclusão. O fato é que existem novas tecnologias, de onde se conclui que começa uma nova batalha pela audiência.<br>III. A conjunção "mas" traz a ideia de oposição. Isso quer dizer que a carne pode ser prejudicial ou não, depende da quantidade consumida.`
@@ -32,7 +32,7 @@ function verificar() {
         document.getElementById('justificativa').innerHTML = 'Parabéns!! A alternativa B está correta.'
         justificar.style.textAlign = "center"
         exerciseBox.style.height = '740px'
-        pontuacao = pontuacao + 5
+        pontuacao = pontuacao + 10
     }
     else if (document.getElementById("opcaoB").checked && opB == false) {
         document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra B. Justificativa: <br>I. A conjunção "e" traz a ideia de soma. Quer dizer que além do guia explicar o efeito da crise também oferece estratégias para enfrentá-la. <br>II. A conjunção "portanto" traz a ideia de conclusão. O fato é que existem novas tecnologias, de onde se conclui que começa uma nova batalha pela audiência.<br>III. A conjunção "mas" traz a ideia de oposição. Isso quer dizer que a carne pode ser prejudicial ou não, depende da quantidade consumida.`
@@ -43,7 +43,7 @@ function verificar() {
     else if (document.getElementById("opcaoC").checked && opC == true) {
         document.getElementById('justificativa').innerHTML = 'Parabéns!!, A alternativa C está correta.'
         justificar.style.textAlign = "center"
-        pontuacao = pontuacao + 5
+        pontuacao = pontuacao + 10
     }
     else if (document.getElementById("opcaoC").checked && opC == false) {
         document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra B. Justificativa: <br>I. A conjunção "e" traz a ideia de soma. Quer dizer que além do guia explicar o efeito da crise também oferece estratégias para enfrentá-la. <br> II. A conjunção "portanto" traz a ideia de conclusão. O fato é que existem novas tecnologias, de onde se conclui que começa uma nova batalha pela audiência.<br>III. A conjunção "mas" traz a ideia de oposição. Isso quer dizer que a carne pode ser prejudicial ou não, depende da quantidade consumida.`
@@ -54,7 +54,7 @@ function verificar() {
     else if (document.getElementById("opcaoD").checked && opD == true) {
         document.getElementById('justificativa').innerHTML = 'Parabéns!!, A alternativa D está correta.'
         justificar.style.textAlign = "center"
-        pontuacao = pontuacao + 5
+        pontuacao = pontuacao + 10
     }
     else if (document.getElementById("opcaoD").checked && opD == false) {
         document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra B. Justificativa: <br>I. A conjunção "e" traz a ideia de soma. Quer dizer que além do guia explicar o efeito da crise também oferece estratégias para enfrentá-la.<br>II. A conjunção "portanto" traz a ideia de conclusão. O fato é que existem novas tecnologias, de onde se conclui que começa uma nova batalha pela audiência.<br>III. A conjunção "mas" traz a ideia de oposição. Isso quer dizer que a carne pode ser prejudicial ou não, depende da quantidade consumida.`
@@ -65,7 +65,7 @@ function verificar() {
     else if (document.getElementById("opcaoE").checked && opE == true) {
         document.getElementById('justificativa').innerHTML = 'Parabéns!!, A alternativa E está correta.'
         justificar.style.textAlign = "center"
-        pontuacao = pontuacao + 5
+        pontuacao = pontuacao + 10
     }
     else if (document.getElementById("opcaoE").checked && opE == false) {
         document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra B. Justificativa: <br>I. A conjunção "e" traz a ideia de soma. Quer dizer que além do guia explicar o efeito da crise também oferece estratégias para enfrentá-la.<br>II. A conjunção "portanto" traz a ideia de conclusão. O fato é que existem novas tecnologias, de onde se conclui que começa uma nova batalha pela audiência.<br>III. A conjunção "mas" traz a ideia de oposição. Isso quer dizer que a carne pode ser prejudicial ou não, depende da quantidade consumida.`
