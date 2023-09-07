@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+* {
+    color: #EFEBE3;
+}
+
+main {
+    align-items: center;
+    position: relative;
+}
+
+main>div#exercise {
+    width: 600px;
+    height: 450px;
+    background-color: #202F36;
+    padding: 25px;
+    border: none;
+    border-radius: 10px;
+}
+
+main>div#exercise>p#enuncia {
+    margin-top: 2.6px;
+}
+
+main>div#exercise>div#exerciseAlternatives {
+    margin: 15px 0;
+}
+
+main>div#exercise>div#exerciseAlternatives>div.alternativess {
+    display: inline-block;
+    width: 100%;
+    background-color: #131F24;
+    margin: 3px 0;
+    border: 2px solid #27393E;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+main>div#exercise>div#exerciseAlternatives>div.alternativess:active {
+    background-color: #202F36;
+    border: 2px solid #131F24;
+}
+
+p#justificativa {
+    text-align: justify;
+    margin-bottom: 10px;
+}
+
+div#submitBtnInpt {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+div#submitBtnInpt>button,
+div#submitBtnInpt>input {
+    margin-top: 10px;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    width: 180px;
+    color: black;
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #EFEBE3;
+}
+
+div#score,
+div#backPage {
+    position: absolute;
+}
+
+div#score {
+    right: 20px;
+    top: 13px;
+    display: inline-block;
+    background-color: #202F36;
+    padding: 14px 42px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+div#score>h2 {
+    font-size: 16px;
+}
+
+div#score>p {
+    font-size: 32px;
+}
+
+div#backPage {
+    left: 20px;
+    top: 13px;
+}
+
+div#backPage>a {
+    text-decoration: none;
+}

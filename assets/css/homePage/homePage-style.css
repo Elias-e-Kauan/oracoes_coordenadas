@@ -1,21 +1,25 @@
 @charset "UTF-8";
-main{
+
+main {
     display: inline-block;
     text-align: center;
     color: white;
 }
-main > h1{
+
+main>h1 {
     margin: 30px 0 10px 0;
     font-size: 45px;
 }
-main > div#containerLevelBox{
+
+main>div#containerLevelBox {
     width: 100vw;
     height: 80vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
-div#containerLevelBox > div.levelBox{
+
+div#containerLevelBox>div.levelBox {
     width: 300px;
     height: 450px;
     padding: 20px;
@@ -23,48 +27,96 @@ div#containerLevelBox > div.levelBox{
     color: black;
     border-radius: 5px;
 }
-div.levelBox > h2{
+
+div.levelBox>h2 {
     text-align: center;
     font-size: 32px;
 }
-div.levelBox > div.fireIcons{
+
+div.levelBox>div.fireIcons {
     width: 100%;
     display: flex;
     justify-content: center;
 }
-div.levelBox > div.fireIcons > img{
+
+div.levelBox>div.fireIcons>img {
     width: 25px;
     height: 25px;
     margin-top: 15px;
 }
-div.levelBox > p{
+
+div.levelBox>p {
+    text-indent: 15px;
+    font-weight: bold;
     margin-top: 15px;
     font-size: 18px;
 }
-div.levelBox > button{
+
+div.levelBox>button {
     width: 100%;
     border: none;
     border-radius: 2.5px;
     background-color: #031D28;
     padding: 5px;
 }
-div.levelBox > button > a{
+
+div.levelBox>button>a {
+    display: inline-block;
     text-decoration: none;
     width: 100%;
     font-size: 18px;
     font-weight: bold;
     color: white;
 }
+div#containerLevelBox>div#facil>button{
+    width: 260px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
 
-div#containerLevelBox > div#facil{
+div#containerLevelBox>div#medio>button{
+    width: 260px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+div#containerLevelBox>div#intermediario>button{
+    width: 260px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+div#containerLevelBox>div#dificil>button{
+    width: 260px;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+}
+
+
+div#containerLevelBox>div#facil {
     background-color: #39FF14;
+    position: relative;
 }
-div#containerLevelBox > div#medio{
+
+div#containerLevelBox>div#medio {
     background-color: #FFF755;
+    position: relative;
 }
-div#containerLevelBox > div#intermediario{
+
+div#containerLevelBox>div#intermediario {
     background-color: #FF073D;
+    position: relative;
 }
-div#containerLevelBox > div#dificil{
+
+div#containerLevelBox>div#dificil {
     background-color: #CF0E0E;
+    position: relative;
 }
