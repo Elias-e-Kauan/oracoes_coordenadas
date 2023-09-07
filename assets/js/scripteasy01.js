@@ -6,7 +6,6 @@ function proxPagina() {
     }
 }
 
-var pontuacao = 0
 function verificar() {
     var respostas = [
         opA = false,
@@ -17,6 +16,7 @@ function verificar() {
     ]
 
     var justificar = document.getElementById('justificativa')
+    var pontuacao = pontuacao
 
     if (document.getElementById("opcaoA").checked && opA == true) {
         document.getElementById('justificativa').innerHTML = 'Parabéns!! A alternativa A está correta.'

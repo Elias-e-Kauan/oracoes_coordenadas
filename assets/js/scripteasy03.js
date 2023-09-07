@@ -20,8 +20,10 @@ function verificar() {
 
     if (document.getElementById("opcaoA").checked && opA == true) {
         document.getElementById('justificativa').innerHTML = 'Parabéns!! A alternativa A está correta.'
+        exerciseBox.style.height = '670px'
         justificar.style.textAlign = "center"
         pontuacao = pontuacao + 5
+        
     }
     else if (document.getElementById("opcaoA").checked && opA == false) {
         document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra B. Justificativa: As orações coordenadas conclusivas expressam a ideia de conclusão, sendo que as conjunções mais utilizadas são: logo, portanto, por fim, por isso, pois, então, consequentemente.'
