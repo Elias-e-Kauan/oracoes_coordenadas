@@ -24,6 +24,8 @@ function verificar() {
     }
     else if (document.getElementById("opcaoA").checked && opA == false) {
         document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra C. Justificativa: A oração incorreta apresenta uma conjunção coordenativa explicativa, e não conclusiva. Isso porque ela explica um fato: por conta de ter ido muito bem na escola, ele ganhou um bom presente no final do ano.'
+        exerciseBox.style.height = '580px'
+        justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoB").checked && opB == true) {
@@ -33,15 +35,21 @@ function verificar() {
     }
     else if (document.getElementById("opcaoB").checked && opB == false) {
         document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra C. Justificativa: A oração incorreta apresenta uma conjunção coordenativa explicativa, e não conclusiva. Isso porque ela explica um fato: por conta de ter ido muito bem na escola, ele ganhou um bom presente no final do ano.'
+        exerciseBox.style.height = '580px'
+        justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoC").checked && opC == true) {
         document.getElementById('justificativa').innerHTML = 'Parabéns!! A alternativa C está correta.'
+        exerciseBox.style.height = '515px'
         justificar.style.textAlign = "center"
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoC").checked && opC == false) {
         document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra C. Justificativa: A oração incorreta apresenta uma conjunção coordenativa explicativa, e não conclusiva. Isso porque ela explica um fato: por conta de ter ido muito bem na escola, ele ganhou um bom presente no final do ano.'
+        exerciseBox.style.height = '580px'
+        justificar.style.textAlign = "justify"
+        pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoD").checked && opD == true) {
         document.getElementById('justificativa').innerHTML = 'Parabéns!!, A alternativa D está correta.'
@@ -50,6 +58,8 @@ function verificar() {
     }
     else if (document.getElementById("opcaoD").checked && opD == false) {
         document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra C. Justificativa: A oração incorreta apresenta uma conjunção coordenativa explicativa, e não conclusiva. Isso porque ela explica um fato: por conta de ter ido muito bem na escola, ele ganhou um bom presente no final do ano.'
+        exerciseBox.style.height = '580px'
+        justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoE").checked && opE == true) {
@@ -59,10 +69,14 @@ function verificar() {
     }
     else if (document.getElementById("opcaoE").checked && opE == false) {
         document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra C. Justificativa: A oração incorreta apresenta uma conjunção coordenativa explicativa, e não conclusiva. Isso porque ela explica um fato: por conta de ter ido muito bem na escola, ele ganhou um bom presente no final do ano.'
+        exerciseBox.style.height = '580px'
+        justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
     else {
         document.getElementById('justificativa').innerHTML = 'Nenhuma alternativa foi selecionada'
+        exerciseBox.style.height = '515px'
+        justificar.style.textAlign = "center"
     }
-    document.getElementById('score').getElementsByTagName('p')[0].textContent = pontuacao;
+    document.getElementById('score').getElementsByTagName('p')[0].textContent = '0' + pontuacao;
 }

@@ -26,6 +26,7 @@ div#containerLevelBox>div.levelBox {
     text-align: justify;
     color: black;
     border-radius: 5px;
+    box-shadow: 1px 1px 9px 0px black;
 }
 
 div.levelBox>h2 {
@@ -58,6 +59,7 @@ div.levelBox>button {
     border-radius: 2.5px;
     background-color: #031D28;
     padding: 5px;
+    box-shadow: 1px 1px 9px -3px black;
 }
 
 div.levelBox>button>a {

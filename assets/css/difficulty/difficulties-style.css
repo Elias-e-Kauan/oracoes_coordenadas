@@ -15,6 +15,7 @@ main>div#exercise {
     padding: 25px;
     border: none;
     border-radius: 10px;
+    box-shadow: 1px 1px 9px -1px black;
 }
 
 main>div#exercise>p#enuncia {
@@ -39,6 +40,7 @@ main>div#exercise>div#exerciseAlternatives>div.alternativess {
 main>div#exercise>div#exerciseAlternatives>div.alternativess:active {
     background-color: #202F36;
     border: 2px solid #131F24;
+    box-shadow: 1px 1px 9px -1px black;
 }
 
 p#justificativa {
@@ -78,6 +80,7 @@ div#score {
     padding: 14px 42px;
     border-radius: 5px;
     text-align: center;
+    box-shadow: 1px 1px 9px -1px black;
 }
 
 div#score>h2 {
@@ -95,4 +98,8 @@ div#backPage {
 
 div#backPage>a {
     text-decoration: none;
+}
+
+div#alternatives {
+    display: inline-block;
 }

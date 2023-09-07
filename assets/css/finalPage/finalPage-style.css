@@ -1,6 +1,33 @@
 @charset "UTF-8";
 
+main>div#titleBox{
+    display: flex;
+    justify-content: space-evenly;
+    margin: 37px 130px 0px;
+    font-size: 23px;
+}
+h1#green{
+    color: #39FF14;
+}
+h1#yellow{
+    color: #FFF755;
+}
+h1#lightRed{
+    color: #FF073D;
+}
+h1#darkRed{
+    color: #CF0E0E;
+}
+h1#bgTitle{
+    color: #FFF755;
+    border-radius: 3px;
+    padding: 0 px;
+}
 main>div#containerLevelBox>div#finalPageBox {
     background-color: #202F36;
     color: #EFEBE3;
+}
+a#backPageBTN{
+    color: #EFEBE3;
+    text-decoration: none;
 }

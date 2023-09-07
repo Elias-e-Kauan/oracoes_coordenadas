@@ -23,8 +23,9 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoA").checked && opA == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra E. Justificativa: A oração acima é uma oração coordenada conclusiva pois expressa a ideia de conclusão, sendo que as conjunções mais utilizadas são: pois, consequentemente, logo, assim, portanto, por fim, então.'
-        'A conjunção “contudo” é utilizada em orações coordenadas adversativas que expressam a ideia de oposição.'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra E. Justificativa: A oração acima é uma oração coordenada conclusiva pois expressa a ideia de conclusão, sendo que as conjunções mais utilizadas são: pois, consequentemente, logo, assim, portanto, por fim, então.<br>A conjunção “contudo” é utilizada em orações coordenadas adversativas que expressam a ideia de oposição.`
+        exerciseBox.style.height = '560px'
+        justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoB").checked && opB == true) {
@@ -33,8 +34,9 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoB").checked && opB == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra E. Justificativa: A oração acima é uma oração coordenada conclusiva pois expressa a ideia de conclusão, sendo que as conjunções mais utilizadas são: pois, consequentemente, logo, assim, portanto, por fim, então.'
-        'A conjunção “contudo” é utilizada em orações coordenadas adversativas que expressam a ideia de oposição.'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra E. Justificativa: A oração acima é uma oração coordenada conclusiva pois expressa a ideia de conclusão, sendo que as conjunções mais utilizadas são: pois, consequentemente, logo, assim, portanto, por fim, então.<br>A conjunção “contudo” é utilizada em orações coordenadas adversativas que expressam a ideia de oposição.`
+        exerciseBox.style.height = '560px'
+        justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoC").checked && opC == true) {
@@ -43,8 +45,10 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoC").checked && opC == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra E. Justificativa: A oração acima é uma oração coordenada conclusiva pois expressa a ideia de conclusão, sendo que as conjunções mais utilizadas são: pois, consequentemente, logo, assim, portanto, por fim, então.'
-        'A conjunção “contudo” é utilizada em orações coordenadas adversativas que expressam a ideia de oposição.'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra E. Justificativa: A oração acima é uma oração coordenada conclusiva pois expressa a ideia de conclusão, sendo que as conjunções mais utilizadas são: pois, consequentemente, logo, assim, portanto, por fim, então.<br>A conjunção “contudo” é utilizada em orações coordenadas adversativas que expressam a ideia de oposição.`
+        exerciseBox.style.height = '560px'
+        justificar.style.textAlign = "justify"
+        pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoD").checked && opD == true) {
         document.getElementById('justificativa').innerHTML = 'Parabéns!!, A alternativa D está correta.'
@@ -52,22 +56,27 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoD").checked && opD == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra E. Justificativa: A oração acima é uma oração coordenada conclusiva pois expressa a ideia de conclusão, sendo que as conjunções mais utilizadas são: pois, consequentemente, logo, assim, portanto, por fim, então.'
-        'A conjunção “contudo” é utilizada em orações coordenadas adversativas que expressam a ideia de oposição.'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra E. Justificativa: A oração acima é uma oração coordenada conclusiva pois expressa a ideia de conclusão, sendo que as conjunções mais utilizadas são: pois, consequentemente, logo, assim, portanto, por fim, então.<br>A conjunção “contudo” é utilizada em orações coordenadas adversativas que expressam a ideia de oposição.`
+        exerciseBox.style.height = '560px'
+        justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoE").checked && opE == true) {
         document.getElementById('justificativa').innerHTML = 'Parabéns!! A alternativa E está correta.'
         justificar.style.textAlign = "center"
+        exerciseBox.style.height = '460px'
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoE").checked && opE == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra E. Justificativa: A oração acima é uma oração coordenada conclusiva pois expressa a ideia de conclusão, sendo que as conjunções mais utilizadas são: pois, consequentemente, logo, assim, portanto, por fim, então.'
-        'A conjunção “contudo” é utilizada em orações coordenadas adversativas que expressam a ideia de oposição.'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra E. Justificativa: A oração acima é uma oração coordenada conclusiva pois expressa a ideia de conclusão, sendo que as conjunções mais utilizadas são: pois, consequentemente, logo, assim, portanto, por fim, então.<br>A conjunção “contudo” é utilizada em orações coordenadas adversativas que expressam a ideia de oposição.`
+        exerciseBox.style.height = '560px'
+        justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
     else {
         document.getElementById('justificativa').innerHTML = 'Nenhuma alternativa foi selecionada'
+        justificar.style.textAlign = "center"
+        exerciseBox.style.height = '460px'
     }
-    document.getElementById('score').getElementsByTagName('p')[0].textContent = pontuacao;
+    document.getElementById('score').getElementsByTagName('p')[0].textContent = '0' + pontuacao;
 }

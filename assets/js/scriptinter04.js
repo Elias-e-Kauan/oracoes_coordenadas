@@ -20,11 +20,13 @@ function verificar() {
     if (document.getElementById("opcaoA").checked && opA == true) {
         document.getElementById('justificativa').innerHTML = 'Parabéns!! A alternativa A está correta.'
         justificar.style.textAlign = "center"
+        exerciseBox.style.height = '620px'
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoA").checked && opA == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra A. As orações coordenadas sindéticas apenas podem ser aditivas, adversativas, alternativas, conclusivas e explicativas.'
-        'As restantes alternativas correspondem a classificações de orações subordinadas adverbiais.'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra A. As orações coordenadas sindéticas apenas podem ser aditivas, adversativas, alternativas, conclusivas e explicativas.<br>As restantes alternativas correspondem a classificações de orações subordinadas adverbiais.`
+        justificar.style.textAlign = "justify"
+        exerciseBox.style.height = '700px'
         pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoB").checked && opB == true) {
@@ -33,8 +35,9 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoB").checked && opB == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra A. As orações coordenadas sindéticas apenas podem ser aditivas, adversativas, alternativas, conclusivas e explicativas.'
-        'As restantes alternativas correspondem a classificações de orações subordinadas adverbiais.'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra A. As orações coordenadas sindéticas apenas podem ser aditivas, adversativas, alternativas, conclusivas e explicativas.<br> As restantes alternativas correspondem a classificações de orações subordinadas adverbiais.`
+        justificar.style.textAlign = "justify"
+        exerciseBox.style.height = '700px'
         pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoC").checked && opC == true) {
@@ -43,8 +46,10 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoC").checked && opC == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra A. As orações coordenadas sindéticas apenas podem ser aditivas, adversativas, alternativas, conclusivas e explicativas.'
-        'As restantes alternativas correspondem a classificações de orações subordinadas adverbiais.'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra A. As orações coordenadas sindéticas apenas podem ser aditivas, adversativas, alternativas, conclusivas e explicativas.<br> As restantes alternativas correspondem a classificações de orações subordinadas adverbiais.`
+        justificar.style.textAlign = "justify"
+        exerciseBox.style.height = '700px'
+        pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoD").checked && opD == true) {
         document.getElementById('justificativa').innerHTML = 'Parabéns!!, A alternativa D está correta.'
@@ -52,8 +57,9 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoD").checked && opD == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra A. As orações coordenadas sindéticas apenas podem ser aditivas, adversativas, alternativas, conclusivas e explicativas.'
-        'As restantes alternativas correspondem a classificações de orações subordinadas adverbiais.'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra A. As orações coordenadas sindéticas apenas podem ser aditivas, adversativas, alternativas, conclusivas e explicativas.<br> As restantes alternativas correspondem a classificações de orações subordinadas adverbiais.`
+        justificar.style.textAlign = "justify"
+        exerciseBox.style.height = '700px'
         pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoE").checked && opE == true) {
@@ -62,12 +68,15 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoE").checked && opE == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra A. As orações coordenadas sindéticas apenas podem ser aditivas, adversativas, alternativas, conclusivas e explicativas.'
-        'As restantes alternativas correspondem a classificações de orações subordinadas adverbiais.'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra A. As orações coordenadas sindéticas apenas podem ser aditivas, adversativas, alternativas, conclusivas e explicativas.<br> As restantes alternativas correspondem a classificações de orações subordinadas adverbiais.`
+        justificar.style.textAlign = "justify"
+        exerciseBox.style.height = '700px'
         pontuacao = pontuacao + 0
     }
     else {
         document.getElementById('justificativa').innerHTML = 'Nenhuma alternativa foi selecionada'
+        justificar.style.textAlign = "center"
+        exerciseBox.style.height = '620px'
     }
-    document.getElementById('score').getElementsByTagName('p')[0].textContent = pontuacao;
+    document.getElementById('score').getElementsByTagName('p')[0].textContent = '0' + pontuacao;
 }

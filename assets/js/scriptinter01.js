@@ -24,6 +24,8 @@ function verificar() {
     }
     else if (document.getElementById("opcaoA").checked && opA == false) {
         document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra E. Justificativa: A conjunção "mas" traz a ideia de contraste. Isso quer dizer que somos pacifistas, apesar disso, não abrimos mão de estudos até para fins bélicos.'
+        exerciseBox.style.height = '540px'
+        justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoB").checked && opB == true) {
@@ -33,6 +35,8 @@ function verificar() {
     }
     else if (document.getElementById("opcaoB").checked && opB == false) {
         document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra E. Justificativa: A conjunção "mas" traz a ideia de contraste. Isso quer dizer que somos pacifistas, apesar disso, não abrimos mão de estudos até para fins bélicos.'
+        exerciseBox.style.height = '540px'
+        justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoC").checked && opC == true) {
@@ -42,6 +46,9 @@ function verificar() {
     }
     else if (document.getElementById("opcaoC").checked && opC == false) {
         document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra E. Justificativa: A conjunção "mas" traz a ideia de contraste. Isso quer dizer que somos pacifistas, apesar disso, não abrimos mão de estudos até para fins bélicos.'
+        exerciseBox.style.height = '540px'
+        justificar.style.textAlign = "justify"
+        pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoD").checked && opD == true) {
         document.getElementById('justificativa').innerHTML = 'Parabéns!!, A alternativa D está correta.'
@@ -50,19 +57,26 @@ function verificar() {
     }
     else if (document.getElementById("opcaoD").checked && opD == false) {
         document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra E. Justificativa: A conjunção "mas" traz a ideia de contraste. Isso quer dizer que somos pacifistas, apesar disso, não abrimos mão de estudos até para fins bélicos.'
+        exerciseBox.style.height = '540px'
+        justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoE").checked && opE == true) {
         document.getElementById('justificativa').innerHTML = 'Parabéns!! A alternativa E está correta.'
         justificar.style.textAlign = "center"
+        exerciseBox.style.height = '500px'
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoE").checked && opE == false) {
         document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra E. Justificativa: A conjunção "mas" traz a ideia de contraste. Isso quer dizer que somos pacifistas, apesar disso, não abrimos mão de estudos até para fins bélicos.'
+        exerciseBox.style.height = '540px'
+        justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
     else {
         document.getElementById('justificativa').innerHTML = 'Nenhuma alternativa foi selecionada'
+        justificar.style.textAlign = "center"
+        exerciseBox.style.height = '500px'
     }
-    document.getElementById('score').getElementsByTagName('p')[0].textContent = pontuacao;
+    document.getElementById('score').getElementsByTagName('p')[0].textContent = '0' + pontuacao;
 }

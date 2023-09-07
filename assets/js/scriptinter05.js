@@ -1,4 +1,5 @@
 var exerciseBox = document.getElementById('exercise')
+var main = document.getElementById('inter5main')
 function proxPagina() {
     var confirmAdvance = confirm("Você quer mesmo avançar para a próxima questão? (Ação sem retorno)")
     if (confirmAdvance == true) {
@@ -23,24 +24,22 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoA").checked && opA == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra B. Justificativa: Quanto às alternativas restantes:'
-        'a) Concessão é sinônimo de permissão. As orações que trazem essa ideia são subordinadas (orações subordinadas adverbiais concessivas), mas no caso acima a oração é coordenada.'
-        'c) O conectivo "que" não traz a ideia de soma. Exemplos de conectivos que fazem esse papel são: e, mas também, nem.'
-        'd) O conectivo "que" não traz a ideia de contraste. Exemplos de conectivos que fazem esse papel são: contudo, entretanto, todavia.'
-        'e) O conectivo "que" não traz a ideia de conclusão.Exemplos de conectivos que fazem esse papel são: então, logo, portanto.'
-            pontuacao = pontuacao + 0
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra B. Justificativa: Quanto às alternativas restantes: <br>a) Concessão é sinônimo de permissão. As orações que trazem essa ideia são subordinadas (orações subordinadas adverbiais concessivas), mas no caso acima a oração é coordenada. <br>c) O conectivo "que" não traz a ideia de soma. Exemplos de conectivos que fazem esse papel são: e, mas também, nem. <br>d) O conectivo "que" não traz a ideia de contraste. Exemplos de conectivos que fazem esse papel são: contudo, entretanto, todavia. <br>e) O conectivo "que" não traz a ideia de conclusão.Exemplos de conectivos que fazem esse papel são: então, logo, portanto.`
+        exerciseBox.style.height = '1020px'
+        justificar.style.textAlign = "justify"
+        main.style.height = '120vh'
+        pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoB").checked && opB == true) {
         document.getElementById('justificativa').innerHTML = 'Parabéns!! A alternativa B está correta.'
         justificar.style.textAlign = "center"
+        exerciseBox.style.height = '855px'
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoB").checked && opB == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra B. Justificativa: Quanto às alternativas restantes:'
-        'a) Concessão é sinônimo de permissão. As orações que trazem essa ideia são subordinadas (orações subordinadas adverbiais concessivas), mas no caso acima a oração é coordenada.'
-        'c) O conectivo "que" não traz a ideia de soma. Exemplos de conectivos que fazem esse papel são: e, mas também, nem.'
-        'd) O conectivo "que" não traz a ideia de contraste. Exemplos de conectivos que fazem esse papel são: contudo, entretanto, todavia.'
-        'e) O conectivo "que" não traz a ideia de conclusão.Exemplos de conectivos que fazem esse papel são: então, logo, portanto.'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra B. Justificativa: Quanto às alternativas restantes: <br>a) Concessão é sinônimo de permissão. As orações que trazem essa ideia são subordinadas (orações subordinadas adverbiais concessivas), mas no caso acima a oração é coordenada.<br> c) O conectivo "que" não traz a ideia de soma. Exemplos de conectivos que fazem esse papel são: e, mas também, nem.<br> d) O conectivo "que" não traz a ideia de contraste. Exemplos de conectivos que fazem esse papel são: contudo, entretanto, todavia.<br> e) O conectivo "que" não traz a ideia de conclusão.Exemplos de conectivos que fazem esse papel são: então, logo, portanto.`
+        exerciseBox.style.height = '1020px'
+        justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoC").checked && opC == true) {
@@ -49,11 +48,11 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoC").checked && opC == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra B. Justificativa: Quanto às alternativas restantes:'
-        'a) Concessão é sinônimo de permissão. As orações que trazem essa ideia são subordinadas (orações subordinadas adverbiais concessivas), mas no caso acima a oração é coordenada.'
-        'c) O conectivo "que" não traz a ideia de soma. Exemplos de conectivos que fazem esse papel são: e, mas também, nem.'
-        'd) O conectivo "que" não traz a ideia de contraste. Exemplos de conectivos que fazem esse papel são: contudo, entretanto, todavia.'
-        'e) O conectivo "que" não traz a ideia de conclusão.Exemplos de conectivos que fazem esse papel são: então, logo, portanto.'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra B. Justificativa: Quanto às alternativas restantes:<br> a) Concessão é sinônimo de permissão. As orações que trazem essa ideia são subordinadas (orações subordinadas adverbiais concessivas), mas no caso acima a oração é coordenada.<br> c) O conectivo "que" não traz a ideia de soma. Exemplos de conectivos que fazem esse papel são: e, mas também, nem.<br> d) O conectivo "que" não traz a ideia de contraste. Exemplos de conectivos que fazem esse papel são: contudo, entretanto, todavia.<br> e) O conectivo "que" não traz a ideia de conclusão.Exemplos de conectivos que fazem esse papel são: então, logo, portanto.`
+        exerciseBox.style.height = '1020px'
+        justificar.style.textAlign = "justify"
+        main.style.height = '120vh'
+        pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoD").checked && opD == true) {
         document.getElementById('justificativa').innerHTML = 'Parabéns!!, A alternativa D está correta.'
@@ -61,11 +60,10 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoD").checked && opD == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra B. Justificativa: Quanto às alternativas restantes:'
-        'a) Concessão é sinônimo de permissão. As orações que trazem essa ideia são subordinadas (orações subordinadas adverbiais concessivas), mas no caso acima a oração é coordenada.'
-        'c) O conectivo "que" não traz a ideia de soma. Exemplos de conectivos que fazem esse papel são: e, mas também, nem.'
-        'd) O conectivo "que" não traz a ideia de contraste. Exemplos de conectivos que fazem esse papel são: contudo, entretanto, todavia.'
-        'e) O conectivo "que" não traz a ideia de conclusão.Exemplos de conectivos que fazem esse papel são: então, logo, portanto.'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra B. Justificativa: Quanto às alternativas restantes:<br> a) Concessão é sinônimo de permissão. As orações que trazem essa ideia são subordinadas (orações subordinadas adverbiais concessivas), mas no caso acima a oração é coordenada.<br> c) O conectivo "que" não traz a ideia de soma. Exemplos de conectivos que fazem esse papel são: e, mas também, nem.<br> d) O conectivo "que" não traz a ideia de contraste. Exemplos de conectivos que fazem esse papel são: contudo, entretanto, todavia.<br> e) O conectivo "que" não traz a ideia de conclusão.Exemplos de conectivos que fazem esse papel são: então, logo, portanto.`
+        exerciseBox.style.height = '1020px'
+        justificar.style.textAlign = "justify"
+        main.style.height = '120vh'
         pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoE").checked && opE == true) {
@@ -74,15 +72,16 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoE").checked && opE == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra B. Justificativa: Quanto às alternativas restantes:'
-        'a) Concessão é sinônimo de permissão. As orações que trazem essa ideia são subordinadas (orações subordinadas adverbiais concessivas), mas no caso acima a oração é coordenada.'
-        'c) O conectivo "que" não traz a ideia de soma. Exemplos de conectivos que fazem esse papel são: e, mas também, nem.'
-        'd) O conectivo "que" não traz a ideia de contraste. Exemplos de conectivos que fazem esse papel são: contudo, entretanto, todavia.'
-        'e) O conectivo "que" não traz a ideia de conclusão.Exemplos de conectivos que fazem esse papel são: então, logo, portanto.'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra B. Justificativa: Quanto às alternativas restantes:<br> a) Concessão é sinônimo de permissão. As orações que trazem essa ideia são subordinadas (orações subordinadas adverbiais concessivas), mas no caso acima a oração é coordenada.<br> c) O conectivo "que" não traz a ideia de soma. Exemplos de conectivos que fazem esse papel são: e, mas também, nem.<br> d) O conectivo "que" não traz a ideia de contraste. Exemplos de conectivos que fazem esse papel são: contudo, entretanto, todavia.<br> e) O conectivo "que" não traz a ideia de conclusão.Exemplos de conectivos que fazem esse papel são: então, logo, portanto.`
+        exerciseBox.style.height = '1020px'
+        justificar.style.textAlign = "justify"
+        main.style.height = '120vh'
         pontuacao = pontuacao + 0
     }
     else {
         document.getElementById('justificativa').innerHTML = 'Nenhuma alternativa foi selecionada'
+        justificar.style.textAlign = "center"
+        exerciseBox.style.height = '855px'
     }
-    document.getElementById('score').getElementsByTagName('p')[0].textContent = pontuacao;
+    document.getElementById('score').getElementsByTagName('p')[0].textContent = '0' + pontuacao;
 }

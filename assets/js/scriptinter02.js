@@ -23,12 +23,9 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoA").checked && opA == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra C. Justificativa: A alternativa acima é composta por três orações (Meu paciente não tem apetite, / vontade de sair, / interagir com as pessoas.). Todas elas estão ligadas entre si, sem que recorram a nenhuma conjunção. Assim, estamos diante da única oração coordenada assindética do exercício.'
-        'As alternativas restantes recorrem às seguintes conjunções:'
-        'a) Meu paciente não quer comer nem sair. (nem = e não) - oração coordenada sindética aditiva'
-        'b) Fala, fala e não diz nada. - oração coordenada sindética adversativa'
-        'd) Estou me sentindo melhor, portanto vou trabalhar. - oração coordenada sindética conclusiva'
-        'e) Viajaria, quer fosse permitido, quer não. - oração coordenada sindética alternativa'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra C. Justificativa: A alternativa acima é composta por três orações (Meu paciente não tem apetite, / vontade de sair, / interagir com as pessoas.). Todas elas estão ligadas entre si, sem que recorram a nenhuma conjunção. Assim, estamos diante da única oração coordenada assindética do exercício.<br> As alternativas restantes recorrem às seguintes conjunções:<br> a) Meu paciente não quer comer nem sair. (nem = e não) - oração coordenada sindética aditiva<br> b) Fala, fala e não diz nada. - oração coordenada sindética adversativa<br> d) Estou me sentindo melhor, portanto vou trabalhar. - oração coordenada sindética conclusiva<br> e) Viajaria, quer fosse permitido, quer não. - oração coordenada sindética alternativa`
+        exerciseBox.style.height = '700px'
+        justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoB").checked && opB == true) {
@@ -37,25 +34,22 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoB").checked && opB == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra C. Justificativa: A alternativa acima é composta por três orações (Meu paciente não tem apetite, / vontade de sair, / interagir com as pessoas.). Todas elas estão ligadas entre si, sem que recorram a nenhuma conjunção. Assim, estamos diante da única oração coordenada assindética do exercício.'
-        'As alternativas restantes recorrem às seguintes conjunções:'
-        'a) Meu paciente não quer comer nem sair. (nem = e não) - oração coordenada sindética aditiva'
-        'b) Fala, fala e não diz nada. - oração coordenada sindética adversativa'
-        'd) Estou me sentindo melhor, portanto vou trabalhar. - oração coordenada sindética conclusiva'
-        'e) Viajaria, quer fosse permitido, quer não. - oração coordenada sindética alternativa'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra C. Justificativa: A alternativa acima é composta por três orações (Meu paciente não tem apetite, / vontade de sair, / interagir com as pessoas.). Todas elas estão ligadas entre si, sem que recorram a nenhuma conjunção. Assim, estamos diante da única oração coordenada assindética do exercício.<br> As alternativas restantes recorrem às seguintes conjunções:<br> a) Meu paciente não quer comer nem sair. (nem = e não) - oração coordenada sindética aditiva<br> b) Fala, fala e não diz nada. - oração coordenada sindética adversativa<br> d) Estou me sentindo melhor, portanto vou trabalhar. - oração coordenada sindética conclusiva<br> e) Viajaria, quer fosse permitido, quer não. - oração coordenada sindética alternativa`
+        exerciseBox.style.height = '700px'
+        justificar.style.textAlign = "justify"
+        pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoC").checked && opC == true) {
         document.getElementById('justificativa').innerHTML = 'Parabéns!! A alternativa C está correta.'
         justificar.style.textAlign = "center"
+        exerciseBox.style.height = '460px'
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoC").checked && opC == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra C. Justificativa: A alternativa acima é composta por três orações (Meu paciente não tem apetite, / vontade de sair, / interagir com as pessoas.). Todas elas estão ligadas entre si, sem que recorram a nenhuma conjunção. Assim, estamos diante da única oração coordenada assindética do exercício.'
-        'As alternativas restantes recorrem às seguintes conjunções:'
-        'a) Meu paciente não quer comer nem sair. (nem = e não) - oração coordenada sindética aditiva'
-        'b) Fala, fala e não diz nada. - oração coordenada sindética adversativa'
-        'd) Estou me sentindo melhor, portanto vou trabalhar. - oração coordenada sindética conclusiva'
-        'e) Viajaria, quer fosse permitido, quer não. - oração coordenada sindética alternativa'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra C. Justificativa: A alternativa acima é composta por três orações (Meu paciente não tem apetite, / vontade de sair, / interagir com as pessoas.). Todas elas estão ligadas entre si, sem que recorram a nenhuma conjunção. Assim, estamos diante da única oração coordenada assindética do exercício.<br> As alternativas restantes recorrem às seguintes conjunções:<br> a) Meu paciente não quer comer nem sair. (nem = e não) - oração coordenada sindética aditiva<br> b) Fala, fala e não diz nada. - oração coordenada sindética adversativa<br> d) Estou me sentindo melhor, portanto vou trabalhar. - oração coordenada sindética conclusiva<br> e) Viajaria, quer fosse permitido, quer não. - oração coordenada sindética alternativa`
+        exerciseBox.style.height = '700px'
+        justificar.style.textAlign = "justify"
+        pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoD").checked && opD == true) {
         document.getElementById('justificativa').innerHTML = 'Parabéns!!, A alternativa D está correta.'
@@ -63,12 +57,9 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoD").checked && opD == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra C. Justificativa: A alternativa acima é composta por três orações (Meu paciente não tem apetite, / vontade de sair, / interagir com as pessoas.). Todas elas estão ligadas entre si, sem que recorram a nenhuma conjunção. Assim, estamos diante da única oração coordenada assindética do exercício.'
-        'As alternativas restantes recorrem às seguintes conjunções:'
-        'a) Meu paciente não quer comer nem sair. (nem = e não) - oração coordenada sindética aditiva'
-        'b) Fala, fala e não diz nada. - oração coordenada sindética adversativa'
-        'd) Estou me sentindo melhor, portanto vou trabalhar. - oração coordenada sindética conclusiva'
-        'e) Viajaria, quer fosse permitido, quer não. - oração coordenada sindética alternativa'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra C. Justificativa: A alternativa acima é composta por três orações (Meu paciente não tem apetite, / vontade de sair, / interagir com as pessoas.). Todas elas estão ligadas entre si, sem que recorram a nenhuma conjunção. Assim, estamos diante da única oração coordenada assindética do exercício.<br> As alternativas restantes recorrem às seguintes conjunções:<br> a) Meu paciente não quer comer nem sair. (nem = e não) - oração coordenada sindética aditiva<br> b) Fala, fala e não diz nada. - oração coordenada sindética adversativa<br> d) Estou me sentindo melhor, portanto vou trabalhar. - oração coordenada sindética conclusiva<br> e) Viajaria, quer fosse permitido, quer não. - oração coordenada sindética alternativa`
+        exerciseBox.style.height = '700px'
+        justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoE").checked && opE == true) {
@@ -77,16 +68,15 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoE").checked && opE == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra C. Justificativa: A alternativa acima é composta por três orações (Meu paciente não tem apetite, / vontade de sair, / interagir com as pessoas.). Todas elas estão ligadas entre si, sem que recorram a nenhuma conjunção. Assim, estamos diante da única oração coordenada assindética do exercício.'
-        'As alternativas restantes recorrem às seguintes conjunções:'
-        'a) Meu paciente não quer comer nem sair. (nem = e não) - oração coordenada sindética aditiva'
-        'b) Fala, fala e não diz nada. - oração coordenada sindética adversativa'
-        'd) Estou me sentindo melhor, portanto vou trabalhar. - oração coordenada sindética conclusiva'
-        'e) Viajaria, quer fosse permitido, quer não. - oração coordenada sindética alternativa'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra C. Justificativa: A alternativa acima é composta por três orações (Meu paciente não tem apetite, / vontade de sair, / interagir com as pessoas.). Todas elas estão ligadas entre si, sem que recorram a nenhuma conjunção. Assim, estamos diante da única oração coordenada assindética do exercício.<br> As alternativas restantes recorrem às seguintes conjunções:<br> a) Meu paciente não quer comer nem sair. (nem = e não) - oração coordenada sindética aditiva<br> b) Fala, fala e não diz nada. - oração coordenada sindética adversativa<br> d) Estou me sentindo melhor, portanto vou trabalhar. - oração coordenada sindética conclusiva<br> e) Viajaria, quer fosse permitido, quer não. - oração coordenada sindética alternativa`
+        exerciseBox.style.height = '700px'
+        justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
     else {
         document.getElementById('justificativa').innerHTML = 'Nenhuma alternativa foi selecionada'
+        justificar.style.textAlign = "center"
+        exerciseBox.style.height = '460px'
     }
-    document.getElementById('score').getElementsByTagName('p')[0].textContent = pontuacao;
+    document.getElementById('score').getElementsByTagName('p')[0].textContent = '0' + pontuacao;
 }

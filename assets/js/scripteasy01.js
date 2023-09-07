@@ -16,7 +16,7 @@ function verificar() {
     ]
 
     var justificar = document.getElementById('justificativa')
-    var pontuacao = pontuacao
+    var pontuacao = 0
 
     if (document.getElementById("opcaoA").checked && opA == true) {
         document.getElementById('justificativa').innerHTML = 'Parabéns!! A alternativa A está correta.'
@@ -24,9 +24,8 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoA").checked && opA == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra D. Justificativa: As orações coordenadas assindéticas não apresentam nenhum conectivo, enquanto as orações coordenadas sindéticas são sempre ligadas por uma conjunção coordenativa.'
-        'Na frase “Cheguei cedo, portanto terei de esperar a escola abrir.”, o “portanto” é uma conjunção coordenativa de conclusão. Logo, essa é uma oração coordenada conclusiva.'
-        exerciseBox.style.height = '510px'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra D. Justificativa: As orações coordenadas assindéticas não apresentam nenhum conectivo, enquanto as orações coordenadas sindéticas são sempre ligadas por uma conjunção coordenativa.<br> Na frase “Cheguei cedo, portanto terei de esperar a escola abrir.”, o “portanto” é uma conjunção coordenativa de conclusão. Logo, essa é uma oração coordenada conclusiva.`
+        exerciseBox.style.height = '560px'
         justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
@@ -36,9 +35,8 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoB").checked && opB == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra D. Justificativa: As orações coordenadas assindéticas não apresentam nenhum conectivo, enquanto as orações coordenadas sindéticas são sempre ligadas por uma conjunção coordenativa.'
-        'Na frase “Cheguei cedo, portanto terei de esperar a escola abrir.”, o “portanto” é uma conjunção coordenativa de conclusão. Logo, essa é uma oração coordenada conclusiva.'
-        exerciseBox.style.height = '510px'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra D. Justificativa: As orações coordenadas assindéticas não apresentam nenhum conectivo, enquanto as orações coordenadas sindéticas são sempre ligadas por uma conjunção coordenativa.<br> Na frase “Cheguei cedo, portanto terei de esperar a escola abrir.”, o “portanto” é uma conjunção coordenativa de conclusão. Logo, essa é uma oração coordenada conclusiva.`
+        exerciseBox.style.height = '560px'
         justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
@@ -48,9 +46,8 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoC").checked && opC == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra D. Justificativa: As orações coordenadas assindéticas não apresentam nenhum conectivo, enquanto as orações coordenadas sindéticas são sempre ligadas por uma conjunção coordenativa.'
-        'Na frase “Cheguei cedo, portanto terei de esperar a escola abrir.”, o “portanto” é uma conjunção coordenativa de conclusão. Logo, essa é uma oração coordenada conclusiva.'
-        exerciseBox.style.height = '510px'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra D. Justificativa: As orações coordenadas assindéticas não apresentam nenhum conectivo, enquanto as orações coordenadas sindéticas são sempre ligadas por uma conjunção coordenativa.<br> Na frase “Cheguei cedo, portanto terei de esperar a escola abrir.”, o “portanto” é uma conjunção coordenativa de conclusão. Logo, essa é uma oração coordenada conclusiva.`
+        exerciseBox.style.height = '560px'
         justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
@@ -61,9 +58,8 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoD").checked && opD == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra D. Justificativa: As orações coordenadas assindéticas não apresentam nenhum conectivo, enquanto as orações coordenadas sindéticas são sempre ligadas por uma conjunção coordenativa.'
-        'Na frase “Cheguei cedo, portanto terei de esperar a escola abrir.”, o “portanto” é uma conjunção coordenativa de conclusão. Logo, essa é uma oração coordenada conclusiva.'
-        exerciseBox.style.height = '510px'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra D. Justificativa: As orações coordenadas assindéticas não apresentam nenhum conectivo, enquanto as orações coordenadas sindéticas são sempre ligadas por uma conjunção coordenativa.<br> Na frase “Cheguei cedo, portanto terei de esperar a escola abrir.”, o “portanto” é uma conjunção coordenativa de conclusão. Logo, essa é uma oração coordenada conclusiva.` 
+        exerciseBox.style.height = '560px'
         justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
@@ -73,20 +69,16 @@ function verificar() {
         pontuacao = pontuacao + 5
     }
     else if (document.getElementById("opcaoE").checked && opE == false) {
-        document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra D. Justificativa: As orações coordenadas assindéticas não apresentam nenhum conectivo, enquanto as orações coordenadas sindéticas são sempre ligadas por uma conjunção coordenativa.'
-        'Na frase “Cheguei cedo, portanto terei de esperar a escola abrir.”, o “portanto” é uma conjunção coordenativa de conclusão. Logo, essa é uma oração coordenada conclusiva.'
-        exerciseBox.style.height = '510px'
+        document.getElementById('justificativa').innerHTML = `Errado, a alternativa correta é a letra D. Justificativa: As orações coordenadas assindéticas não apresentam nenhum conectivo, enquanto as orações coordenadas sindéticas são sempre ligadas por uma conjunção coordenativa.<br> Na frase “Cheguei cedo, portanto terei de esperar a escola abrir.”, o “portanto” é uma conjunção coordenativa de conclusão. Logo, essa é uma oração coordenada conclusiva.` 
+        exerciseBox.style.height = '560px'
         justificar.style.textAlign = "justify"
         pontuacao = pontuacao + 0
     }
     else {
         document.getElementById('justificativa').innerHTML = 'Nenhuma alternativa foi selecionada'
+        justificar.style.textAlign = "center"
+        exerciseBox.style.height = '450px'
     }
 
-    document.getElementById('score').getElementsByTagName('p')[0].textContent = pontuacao;
-
-    function verificarpontuacao() {
-        return pontuacao;
-    }
-
+    document.getElementById('score').getElementsByTagName('p')[0].textContent = '0' + pontuacao;
 }
