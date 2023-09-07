@@ -1,10 +1,11 @@
+var exerciseBox = document.getElementById('exercise')
+function proxPagina() {
+    var confirmAdvance = confirm("Você quer mesmo avançar para a próxima questão? (Ação sem retorno)")
+    if (confirmAdvance == true) {
+        window.location = "../../pages/intermediate/intermediateQ04.html"
+    }
+}
 function verificar() {
-    const Div = document.querySelector('main>form>div#exercise');
-    const botaoAumentar = document.getElementById('verificar');
-    botaoAumentar.addEventListener('click', () => {
-        Div.style.width = '1000px'
-        Div.style.height = '850px'
-    });
     var respostas = [
         opA = false,
         opB = true,
@@ -25,13 +26,13 @@ function verificar() {
         document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra B. Justificativa: Correção:'
         '1. Correu demais, por isso caiu. (oração coordenada sindética conclusiva)'
         '2. Dormiu mal, porque os sonhos não o deixaram em paz. (oração coordenada sindética explicativa)'
-        '3. A matéria perece, mas a alma é imortal. (oração coordenada sindética adversativa)' 
+        '3. A matéria perece, mas a alma é imortal. (oração coordenada sindética adversativa)'
         '4. Leu o livro, portanto é capaz de descrever as personagens com detalhes. (oração coordenada sindética conclusiva)'
         '5. Guarde seus pertences, que podem servir mais tarde. (oração coordenada sindética explicativa)'
         pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoB").checked && opB == true) {
-        document.getElementById('justificativa').innerHTML = 'Parabéns!!, A alternativa B está correta.'
+        document.getElementById('justificativa').innerHTML = 'Parabéns!! A alternativa B está correta.'
         justificar.style.textAlign = "center"
         pontuacao = pontuacao + 5
     }
@@ -39,7 +40,7 @@ function verificar() {
         document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra B. Justificativa: Correção:'
         '1. Correu demais, por isso caiu. (oração coordenada sindética conclusiva)'
         '2. Dormiu mal, porque os sonhos não o deixaram em paz. (oração coordenada sindética explicativa)'
-        '3. A matéria perece, mas a alma é imortal. (oração coordenada sindética adversativa)' 
+        '3. A matéria perece, mas a alma é imortal. (oração coordenada sindética adversativa)'
         '4. Leu o livro, portanto é capaz de descrever as personagens com detalhes. (oração coordenada sindética conclusiva)'
         '5. Guarde seus pertences, que podem servir mais tarde. (oração coordenada sindética explicativa)'
         pontuacao = pontuacao + 0
@@ -53,7 +54,7 @@ function verificar() {
         document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra B. Justificativa: Correção:'
         '1. Correu demais, por isso caiu. (oração coordenada sindética conclusiva)'
         '2. Dormiu mal, porque os sonhos não o deixaram em paz. (oração coordenada sindética explicativa)'
-        '3. A matéria perece, mas a alma é imortal. (oração coordenada sindética adversativa)' 
+        '3. A matéria perece, mas a alma é imortal. (oração coordenada sindética adversativa)'
         '4. Leu o livro, portanto é capaz de descrever as personagens com detalhes. (oração coordenada sindética conclusiva)'
         '5. Guarde seus pertences, que podem servir mais tarde. (oração coordenada sindética explicativa)'
     }
@@ -66,7 +67,7 @@ function verificar() {
         document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra B. Justificativa: Correção:'
         '1. Correu demais, por isso caiu. (oração coordenada sindética conclusiva)'
         '2. Dormiu mal, porque os sonhos não o deixaram em paz. (oração coordenada sindética explicativa)'
-        '3. A matéria perece, mas a alma é imortal. (oração coordenada sindética adversativa)' 
+        '3. A matéria perece, mas a alma é imortal. (oração coordenada sindética adversativa)'
         '4. Leu o livro, portanto é capaz de descrever as personagens com detalhes. (oração coordenada sindética conclusiva)'
         '5. Guarde seus pertences, que podem servir mais tarde. (oração coordenada sindética explicativa)'
         pontuacao = pontuacao + 0
@@ -80,7 +81,7 @@ function verificar() {
         document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra B. Justificativa: Correção:'
         '1. Correu demais, por isso caiu. (oração coordenada sindética conclusiva)'
         '2. Dormiu mal, porque os sonhos não o deixaram em paz. (oração coordenada sindética explicativa)'
-        '3. A matéria perece, mas a alma é imortal. (oração coordenada sindética adversativa)' 
+        '3. A matéria perece, mas a alma é imortal. (oração coordenada sindética adversativa)'
         '4. Leu o livro, portanto é capaz de descrever as personagens com detalhes. (oração coordenada sindética conclusiva)'
         '5. Guarde seus pertences, que podem servir mais tarde. (oração coordenada sindética explicativa)'
         pontuacao = pontuacao + 0
@@ -88,4 +89,5 @@ function verificar() {
     else {
         document.getElementById('justificativa').innerHTML = 'Nenhuma alternativa foi selecionada'
     }
+    document.getElementById('score').getElementsByTagName('p')[0].textContent = pontuacao;
 }

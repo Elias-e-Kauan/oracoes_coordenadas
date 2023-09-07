@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quizz Linguaguens</title>
+    <link rel="shortcut icon" href="../assets/images/favicon/icone.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/difficulty/difficulties-style.css">
+</head>
+
+<body>
+    <main>
+        <div id="backPage">
+            <a href="../homePage.html">Voltar</a>
+        </div>
+        <div id="exercise">
+            <h2>Questão 01</h2>
+            <p id="enuncia">Faço todos os trabalhos de casa de manhã, ___ fico com a tarde livre. A lacuna acima não pode ser substituída pela conjunção</p>
+            <div id="exerciseAlternatives">
+                <div id="altA" class="alternativess">
+                    <input type="radio" id="opcaoA" name="opcoes"><label for="opcaoA">
+                        a) Pois.
+                    </label>
+                </div>
+                <div id="altB" class="alternativess">
+                    <input type="radio" id="opcaoB" name="opcoes">
+                    <label for="opcaoB">
+                        b) Consequentemente.
+                    </label>
+                </div>
+                <div id="altC" class="alternativess">
+                    <input type="radio" id="opcaoC" name="opcoes">
+                    <label for="opcaoC">
+                        c) Logo.
+                    </label>
+                </div>
+                <div id="altD" class="alternativess">
+                    <input type="radio" id="opcaoD" name="opcoes">
+                    <label for="opcaoD">
+                        d) Assim.
+                    </label>
+                </div>
+                <div id="altE" class="alternativess">
+                    <input type="radio" id="opcaoE" name="opcoes">
+                    <label for="opcaoE">
+                        e) Contudo.
+                    </label>
+                </div>
+            </div>
+            <p id="justificativa"></p>
+            <div id="submitBtnInpt">
+                <button id="verificar" onclick="verificar()">Verificar</button>
+                <button onclick="proxPagina();">Próxima</button>
+            </div>
+        </div>
+        <div id="score">
+            <h2>Pontos</h2>
+            <p>00</p>
+        </div>
+    </main>
+    <script src="../../assets/js/scriptmedium01.js"></script>
+</body>
+</html>

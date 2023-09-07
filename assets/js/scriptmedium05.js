@@ -1,10 +1,11 @@
+var exerciseBox = document.getElementById('exercise')
+function proxPagina() {
+    var confirmAdvance = confirm("Você quer mesmo avançar para a próxima questão? (Ação sem retorno)")
+    if (confirmAdvance == true) {
+        window.location = "../../pages/finalPage/medium-finalPage.html"
+    }
+}
 function verificar() {
-    const Div = document.querySelector('main>form>div#exercise');
-    const botaoAumentar = document.getElementById('verificar');
-    botaoAumentar.addEventListener('click', () => {
-        Div.style.width = '1000px'
-        Div.style.height = '850px'
-    });
     var respostas = [
         opA = false,
         opB = true,
@@ -25,11 +26,11 @@ function verificar() {
         document.getElementById('justificativa').innerHTML = 'Errado, a alternativa correta é a letra B. Justificativa: I. A conjunção "e" traz a ideia de soma. Quer dizer que além do guia explicar o efeito da crise também oferece estratégias para enfrentá-la.'
         'II. A conjunção "portanto" traz a ideia de conclusão. O fato é que existem novas tecnologias, de onde se conclui que começa uma nova batalha pela audiência.'
         'III. A conjunção "mas" traz a ideia de oposição. Isso quer dizer que a carne pode ser prejudicial ou não, depende da quantidade consumida.'
-        
+
         pontuacao = pontuacao + 0
     }
     else if (document.getElementById("opcaoB").checked && opB == true) {
-        document.getElementById('justificativa').innerHTML = 'Parabéns!!, A alternativa B está correta.'
+        document.getElementById('justificativa').innerHTML = 'Parabéns!! A alternativa B está correta.'
         justificar.style.textAlign = "center"
         pontuacao = pontuacao + 5
     }
@@ -74,4 +75,5 @@ function verificar() {
     else {
         document.getElementById('justificativa').innerHTML = 'Nenhuma alternativa foi selecionada'
     }
+    document.getElementById('score').getElementsByTagName('p')[0].textContent = pontuacao;
 }

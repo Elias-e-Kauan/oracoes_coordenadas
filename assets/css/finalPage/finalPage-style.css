@@ -1,0 +1,6 @@
+@charset "UTF-8";
+
+main>div#containerLevelBox>div#finalPageBox {
+    background-color: #202F36;
+    color: #EFEBE3;
+}

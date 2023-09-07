@@ -20,6 +20,7 @@ main>div#exercise {
 
 main>div#exercise>p#enuncia {
     margin-top: 2.6px;
+    text-align: justify;
 }
 
 main>div#exercise>div#exerciseAlternatives {

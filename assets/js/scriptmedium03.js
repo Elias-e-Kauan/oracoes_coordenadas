@@ -1,10 +1,11 @@
+var exerciseBox = document.getElementById('exercise')
+function proxPagina() {
+    var confirmAdvance = confirm("Você quer mesmo avançar para a próxima questão? (Ação sem retorno)")
+    if (confirmAdvance == true) {
+        window.location = "../../pages/medium/mediumQ04.html"
+    }
+}
 function verificar() {
-    const Div = document.querySelector('main>form>div#exercise');
-    const botaoAumentar = document.getElementById('verificar');
-    botaoAumentar.addEventListener('click', () => {
-        Div.style.width = '1000px'
-        Div.style.height = '850px'
-    });
     var respostas = [
         opA = true,
         opB = false,
@@ -17,7 +18,7 @@ function verificar() {
     var justificar = document.getElementById('justificativa')
 
     if (document.getElementById("opcaoA").checked && opA == true) {
-        document.getElementById('justificativa').innerHTML = 'Parabéns!!, A alternativa A está correta.'
+        document.getElementById('justificativa').innerHTML = 'Parabéns!! A alternativa A está correta.'
         justificar.style.textAlign = "center"
         pontuacao = pontuacao + 5
     }
@@ -74,4 +75,5 @@ function verificar() {
     else {
         document.getElementById('justificativa').innerHTML = 'Nenhuma alternativa foi selecionada'
     }
+    document.getElementById('score').getElementsByTagName('p')[0].textContent = pontuacao;
 }

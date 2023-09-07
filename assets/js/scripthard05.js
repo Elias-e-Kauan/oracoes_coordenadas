@@ -1,10 +1,11 @@
+var exerciseBox = document.getElementById('exercise')
+function proxPagina() {
+    var confirmAdvance = confirm("Você quer mesmo avançar para a próxima questão? (Ação sem retorno)")
+    if (confirmAdvance == true) {
+        window.location = "../../pages/finalPage/hard-finalPage.html"
+    }
+}
 function verificar() {
-    const Div = document.querySelector('main>form>div#exercise');
-    const botaoAumentar = document.getElementById('verificar');
-    botaoAumentar.addEventListener('click', () => {
-        Div.style.width = '1000px'
-        Div.style.height = '850px'
-    });
     var respostas = [
         opA = false,
         opB = false,
@@ -68,4 +69,5 @@ function verificar() {
     else {
         document.getElementById('justificativa').innerHTML = 'Nenhuma alternativa foi selecionada'
     }
+    document.getElementById('score').getElementsByTagName('p')[0].textContent = pontuacao;
 }
